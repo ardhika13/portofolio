@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Ardhika Galuh Jati Kusuma</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bgDark: '#0a0a0a',
+            cardDark: '#121212',
+            borderDark: '#262626',
+            accent: '#3b82f6',
+          },
+          fontFamily: {
+            sans: ['Geist', 'Inter', 'sans-serif'],
+            mono: ['Geist Mono', 'Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Geist & Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ededed;
+      font-family: 'Geist', sans-serif;
+    }
+    .dot-pattern {
+      background-image: radial-gradient(#262626 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+  </style>
+</head>
+<body class="dot-pattern min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-3xl mx-auto space-y-8">
+    
+    <!-- HEADER / BANNER & PROFILE -->
+    <div class="bg-cardDark border border-borderDark rounded-2xl overflow-hidden shadow-2xl">
+      <div class="h-36 sm:h-48 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
+      
+      <div class="p-6 relative pt-0">
+        <div class="-mt-12 mb-4 flex justify-between items-end">
+          <div class="w-24 h-24 rounded-full border-4 border-cardDark overflow-hidden bg-neutral-800">
+            <img src="https://avatars.githubusercontent.com/ardhika13" alt="Ardhika" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/1e1e1e/ffffff?text=A'"/>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Open to Work
+          </span>
+        </div>
+
+        <h1 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+          Ardhika Galuh Jati Kusuma
+          <i data-lucide="badge-check" class="w-5 h-5 text-blue-500 fill-blue-500/20"></i>
+        </h1>
+        <p class="text-sm text-neutral-400 font-mono mt-0.5">@ardhika13</p>
+        
+        <p class="mt-4 text-sm text-neutral-300 leading-relaxed">
+          Informatika Student @ STT Ronggolawe Cepu. Passionate in <span class="text-white font-medium">Machine Learning</span>, <span class="text-white font-medium">SCADA & Cybersecurity</span>, and <span class="text-white font-medium">Computer Networking</span>. Building reliable end-to-end intelligent systems and network infrastructures.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-4 text-xs text-neutral-400 border-t border-borderDark pt-4">
+          <span class="flex items-center gap-1.5"><i data-lucide="briefcase" class="w-4 h-4"></i> IT & ML Enthusiast</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> Cepu, Indonesia</span>
+          <a href="https://github.com/ardhika13" target="_blank" class="flex items-center gap-1.5 hover:text-white transition-colors">
+            <i data-lucide="github" class="w-4 h-4"></i> github.com/ardhika13
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE SECTION -->
+    <div class="bg-cardDark border border-borderDark rounded-2xl p-6">
+      <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+        <i data-lucide="briefcase" class="w-5 h-5 text-blue-400"></i> Pengalaman & Magang
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="border-l-2 border-neutral-700 pl-4 space-y-1">
+          <div class="flex justify-between items-start">
+            <h3 class="font-medium text-white">IT Infrastructure & Network Intern</h3>
+            <span class="text-xs font-mono text-neutral-500">2026</span>
+          </div>
+          <p class="text-xs text-neutral-400">PPSDM Migas Cepu</p>
+          <p class="text-xs text-neutral-400 mt-1">Konfigurasi VLAN, OSPF Routing, NAT, serta pemeliharaan infrastruktur jaringan laboratorium dan jaringan lokal.</p>
+        </div>
+
+        <div class="border-l-2 border-neutral-700 pl-4 space-y-1">
+          <div class="flex justify-between items-start">
+            <h3 class="font-medium text-white">Ketua Tim KKN Desa Getas</h3>
+            <span class="text-xs font-mono text-neutral-500">2026</span>
+          </div>
+          <p class="text-xs text-neutral-400">STT Ronggolawe Cepu</p>
+          <p class="text-xs text-neutral-400 mt-1">Mengoordinasikan program kerja pengabdian masyarakat, pelatihan kewirausahaan digital, dan pemasangan sarana fasilitas publik.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="bg-cardDark border border-borderDark rounded-2xl p-6">
+      <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+        <i data-lucide="folder-git-2" class="w-5 h-5 text-emerald-400"></i> Projek Unggulan
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 rounded-xl border border-borderDark bg-neutral-900/50 hover:border-neutral-700 transition-all">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-medium text-white text-sm">SCADA Modbus Intrusion Detection</h3>
+            <i data-lucide="external-link" class="w-4 h-4 text-neutral-500"></i>
+          </div>
+          <p class="text-xs text-neutral-400 mb-3">Analisis lalu lintas jaringan Modbus/TCP & evaluasi algoritma ML (Random Forest, SVM, XGBoost) untuk deteksi serangan ICS.</p>
+          <div class="flex gap-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Python</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-green-500/10 text-green-400 border border-green-500/20">Scikit-Learn</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl border border-borderDark bg-neutral-900/50 hover:border-neutral-700 transition-all">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-medium text-white text-sm">Smart Lock Face Recognition</h3>
+            <i data-lucide="external-link" class="w-4 h-4 text-neutral-500"></i>
+          </div>
+          <p class="text-xs text-neutral-400 mb-3">Sistem pengunci pintu otomatis berbasis pengenalan wajah menggunakan OpenCV dan web dashboard Django.</p>
+          <div class="flex gap-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">OpenCV</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Django</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl border border-borderDark bg-neutral-900/50 hover:border-neutral-700 transition-all">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-medium text-white text-sm">Smart Home IoT Telemetry</h3>
+            <i data-lucide="external-link" class="w-4 h-4 text-neutral-500"></i>
+          </div>
+          <p class="text-xs text-neutral-400 mb-3">Monitoring lingkungan rumah berbasis ESP32, sensor DHT11/MQ-2, protokol MQTT, dan live video streaming.</p>
+          <div class="flex gap-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">ESP32</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">MQTT</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl border border-borderDark bg-neutral-900/50 hover:border-neutral-700 transition-all">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-medium text-white text-sm">Cloud Incident Reporting System</h3>
+            <i data-lucide="external-link" class="w-4 h-4 text-neutral-500"></i>
+          </div>
+          <p class="text-xs text-neutral-400 mb-3">Aplikasi pelaporan insiden berbasis cloud dengan arsitektur PHP, MySQL, dan sistem peran pengguna.</p>
+          <div class="flex gap-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">PHP</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECH STACK SECTION -->
+    <div class="bg-cardDark border border-borderDark rounded-2xl p-6">
+      <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+        <i data-lucide="code" class="w-5 h-5 text-purple-400"></i> Tech Stack & Tools
+      </h2>
+      <div class="flex flex-wrap gap-2 font-mono text-xs">
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">Python</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">PHP</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">Django / Flask</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">Streamlit</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">MySQL</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">ESP32 / IoT</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">Cisco Packet Tracer</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">GNS3</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">MikroTik RouterOS</span>
+        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-borderDark text-neutral-300">Git & GitHub</span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-xs text-neutral-500 py-4">
+      <p>© 2026 Ardhika Galuh Jati Kusuma. Built with Tailwind CSS & Geist Font.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

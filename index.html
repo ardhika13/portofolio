@@ -1,207 +1,345 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="dark" class="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ardhika Galuh Jati Kusuma | Portofolio</title>
-<meta name="description" content="Mahasiswa Informatika Universitas Teknologi Ronggolawe. Machine Learning, Keamanan SCADA/ICS, IoT, dan Jaringan Komputer.">
+<meta name="description" content="Mahasiswa Informatika Universitas Teknologi Ronggolawe Cepu. Machine Learning, Keamanan SCADA/ICS, IoT, dan Jaringan Komputer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f6f8;--card:#fff;--bd:#e3e6eb;--tx:#14171c;--mu:#5c6573;--ac:#2563eb;--ac2:#0891b2;--ok:#059669;--sh:0 1px 2px rgba(0,0,0,.05)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--card:#121212;--bd:#262626;--tx:#ededed;--mu:#9aa3b0;--ac:#60a5fa;--ac2:#22d3ee;--ok:#34d399;--sh:none}}
-:root[data-theme="dark"]{--bg:#0a0a0a;--card:#121212;--bd:#262626;--tx:#ededed;--mu:#9aa3b0;--ac:#60a5fa;--ac2:#22d3ee;--ok:#34d399;--sh:none}
+:root{
+  --bg:#0a0a0a;
+  --card:#121212;
+  --bd:#262626;
+  --tx:#ededed;
+  --mu:#9aa3b0;
+  --ac:#3b82f6;
+  --ac2:#06b6d4;
+  --ok:#10b981;
+  --sh:0 10px 30px -10px rgba(0,0,0,0.5);
+}
+:root[data-theme="light"]{
+  --bg:#f5f6f8;
+  --card:#ffffff;
+  --bd:#e3e6eb;
+  --tx:#14171c;
+  --mu:#5c6573;
+  --ac:#2563eb;
+  --ac2:#0891b2;
+  --ok:#059669;
+  --sh:0 1px 3px rgba(0,0,0,.05);
+}
+
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
+html{scroll-behavior:smooth;scroll-padding-top:70px;background-color:#0a0a0a}
 body{background:var(--bg);color:var(--tx);font-family:Geist,Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;background-image:radial-gradient(var(--bd) 1px,transparent 1px);background-size:18px 18px}
 a{color:inherit;text-decoration:none}
 .mono{font-family:"Geist Mono",ui-monospace,monospace}
 .wrap{max-width:900px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
-nav b{font-size:14px}
+nav b{font-size:14px;letter-spacing:-.01em}
 nav ul{display:flex;gap:18px;list-style:none;padding:0;font-size:13px;color:var(--mu);overflow-x:auto}
-nav ul a:hover{color:var(--tx)}
-#th{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
+nav ul a:hover{color:var(--tx);transition:color .2s}
+#th{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:5px 12px;font-size:12px;cursor:pointer;transition:.2s}
+#th:hover{border-color:var(--ac)}
+
 section{margin:48px 0}
-h2{font-size:20px;letter-spacing:-.01em;margin-bottom:6px}
+h2{font-size:20px;letter-spacing:-.01em;margin-bottom:6px;font-weight:700}
 .sub{color:var(--mu);font-size:14px;margin-bottom:20px}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px;box-shadow:var(--sh)}
+
 .hero{overflow:hidden;padding:0;margin-top:32px}
-.ban{height:130px;background:linear-gradient(120deg,#0f2027,#203a43 55%,#2c5364);position:relative}
-.ban:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px}
+.ban{height:140px;background:linear-gradient(120deg,#0f172a,#1e293b 55%,#0f2027);position:relative}
+.ban:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:24px 24px}
 .hb{padding:0 24px 24px}
-.av{width:96px;height:96px;border-radius:50%;border:4px solid var(--card);margin-top:-48px;background:#222;object-fit:cover;position:relative;z-index:1}
+.av{width:96px;height:96px;border-radius:50%;border:4px solid var(--card);margin-top:-48px;background:#1e1e1e;object-fit:cover;position:relative;z-index:1}
 .row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px}
-.open{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ok);border:1px solid color-mix(in srgb,var(--ok) 35%,transparent);background:color-mix(in srgb,var(--ok) 10%,transparent);padding:3px 12px;border-radius:99px}
+.open{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ok);border:1px solid color-mix(in srgb,var(--ok) 35%,transparent);background:color-mix(in srgb,var(--ok) 10%,transparent);padding:4px 12px;border-radius:99px;font-weight:500}
 .open i{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:p 1.8s infinite}
 @keyframes p{50%{opacity:.3}}
-h1{font-size:28px;letter-spacing:-.02em;margin-top:12px;line-height:1.2}
-.hb p{color:var(--mu);font-size:15px;margin-top:10px;max-width:62ch}
+
+h1{font-size:26px;letter-spacing:-.02em;margin-top:12px;line-height:1.2;font-weight:700}
+.hb p{color:var(--mu);font-size:14px;margin-top:10px;max-width:64ch;line-height:1.6}
 .hb p b{color:var(--tx);font-weight:600}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
 .btn{font-size:13px;padding:8px 16px;border-radius:10px;border:1px solid var(--bd);background:var(--card);font-weight:500;transition:.2s}
 .btn:hover{border-color:var(--ac);color:var(--ac)}
 .btn.p{background:var(--ac);border-color:var(--ac);color:#fff}
-.btn.p:hover{color:#fff;opacity:.9}
+.btn.p:hover{opacity:.9;color:#fff}
+
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
 .stat{text-align:center;padding:16px 8px}
-.stat b{display:block;font-size:26px;color:var(--ac);letter-spacing:-.02em}
+.stat b{display:block;font-size:24px;color:var(--ac);letter-spacing:-.02em;font-weight:700}
 .stat span{font-size:12px;color:var(--mu)}
+
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .tl{border-left:2px solid var(--bd);padding-left:18px;margin-bottom:22px;position:relative}
 .tl:before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--ac)}
-.tl h3{font-size:15px;display:flex;justify-content:space-between;gap:8px}
+.tl h3{font-size:15px;display:flex;justify-content:space-between;gap:8px;font-weight:600}
 .tl small{color:var(--mu);font-size:12px}
 .tl p{font-size:13px;color:var(--mu);margin-top:4px}
-.pj{transition:.2s}
+
+.pj{transition:.2s;display:block}
 .pj:hover{transform:translateY(-3px);border-color:var(--ac)}
-.pj h3{font-size:15px;margin-bottom:6px}
+.pj h3{font-size:15px;margin-bottom:6px;font-weight:600}
 .pj p{font-size:13px;color:var(--mu);margin-bottom:12px}
-.tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:6px;border:1px solid var(--bd);color:var(--mu);margin:0 6px 6px 0}
-.sic{border-color:color-mix(in srgb,#f59e0b 40%,var(--bd));background:linear-gradient(135deg,color-mix(in srgb,#f59e0b 8%,var(--card)),var(--card))}
-.sic h3{font-size:16px}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--bd);color:var(--mu);margin:0 6px 6px 0;background:rgba(255,255,255,.02)}
+
+.sic{border-color:color-mix(in srgb,#f59e0b 35%,var(--bd));background:linear-gradient(135deg,color-mix(in srgb,#f59e0b 6%,var(--card)),var(--card))}
+.sic h3{font-size:16px;font-weight:600}
 .stg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;font-size:13px;color:var(--mu)}
 .stg div{padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--card)}
 .stg b{color:var(--tx)}
+
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.tabs button{font:inherit;font-size:13px;padding:6px 14px;border-radius:99px;border:1px solid var(--bd);background:var(--card);color:var(--mu);cursor:pointer}
+.tabs button{font:inherit;font-size:13px;padding:6px 14px;border-radius:99px;border:1px solid var(--bd);background:var(--card);color:var(--mu);cursor:pointer;transition:.2s}
 .tabs button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+
 .cert{padding:14px 16px;display:flex;flex-direction:column;gap:4px}
-.cert h3{font-size:14px;line-height:1.4}
+.cert h3{font-size:14px;line-height:1.4;font-weight:600}
 .cert .is{font-size:12px;color:var(--ac)}
 .cert .dt{font-size:11px;color:var(--mu)}
+
 .cg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .sk{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--bd);font-size:14px}
 .sk:last-child{border:0}
 .sk b{font-weight:600}
 .sk span{color:var(--mu)}
+
 .ct{text-align:center;padding:36px 20px}
-.ct h2{font-size:24px}
+.ct h2{font-size:22px;font-weight:700}
+
 footer{text-align:center;color:var(--mu);font-size:12px;padding:30px 0 40px}
-.js .rv{opacity:0;transform:translateY(16px);transition:.6s}
+
+.js .rv{opacity:0;transform:translateY(16px);transition:.6s ease-out}
 .js .rv.in{opacity:1;transform:none}
-@media(max-width:680px){.grid,.cg,.stg{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.sk{grid-template-columns:1fr;gap:2px}nav ul{display:none}h1{font-size:23px}}
+
+@media(max-width:680px){
+  .grid,.cg,.stg{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .sk{grid-template-columns:1fr;gap:2px}
+  nav ul{display:none}
+  h1{font-size:22px}
+}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b class="mono">ardhika13</b>
-<ul><li><a href="#tentang">Tentang</a></li><li><a href="#pengalaman">Pengalaman</a></li><li><a href="#proyek">Proyek</a></li><li><a href="#sertifikat">Sertifikat</a></li><li><a href="#keahlian">Keahlian</a></li><li><a href="#kontak">Kontak</a></li></ul>
-<button id="th" aria-label="Ganti tema">Tema</button></div></nav>
+<nav>
+  <div class="wrap">
+    <b class="mono">ardhika13</b>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#sertifikat">Sertifikat</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button id="th" aria-label="Ganti tema">🌙 Mode Dark</button>
+  </div>
+</nav>
 
 <main class="wrap">
 <section id="tentang" style="margin-top:0">
-<div class="card hero rv"><div class="ban"></div><div class="hb">
-<div class="row"><img class="av" src="https://github.com/ardhika13.png" alt="Foto Ardhika"><span class="open"><i></i>Terbuka untuk magang</span></div>
-<h1>Ardhika Galuh Jati Kusuma</h1>
-<div class="mono" style="color:var(--mu);font-size:13px;margin-top:4px">@ardhika13 &middot; Cepu, Indonesia</div>
-<p>Mahasiswa Informatika di <b>Universitas Teknologi Ronggolawe</b>. Berfokus pada <b>Machine Learning</b>, <b>keamanan SCADA/ICS</b>, <b>IoT</b>, dan <b>jaringan komputer</b>. Membangun sistem cerdas dan infrastruktur jaringan yang andal dan aman.</p>
-<div class="btns"><a class="btn p" href="#kontak">Hubungi saya</a><a class="btn" href="https://github.com/ardhika13" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/ardhika-galuh-jati-kusuma" target="_blank" rel="noopener">LinkedIn</a></div>
-</div></div>
-<div class="stats rv">
-<div class="card stat"><b>20</b><span>Sertifikat</span></div>
-<div class="card stat"><b>4</b><span>Proyek unggulan</span></div>
-<div class="card stat"><b>99.49</b><span>Skor Python SIC</span></div>
-<div class="card stat"><b>4/4</b><span>Stage Samsung SIC</span></div>
-</div>
+  <div class="card hero rv">
+    <div class="ban"></div>
+    <div class="hb">
+      <div class="row">
+        <img class="av" src="https://github.com/ardhika13.png" alt="Foto Ardhika Galuh Jati Kusuma">
+        <span class="open"><i></i>Terbuka untuk Magang / Kerja</span>
+      </div>
+      <h1>Ardhika Galuh Jati Kusuma</h1>
+      <div class="mono" style="color:var(--mu);font-size:13px;margin-top:4px">@ardhika13 &middot; Cepu, Indonesia</div>
+      <p>Mahasiswa Informatika di <b>STT Ronggolawe Cepu</b>. Berfokus pada <b>Machine Learning</b>, <b>keamanan SCADA/ICS</b>, <b>IoT</b>, dan <b>jaringan komputer</b>. Membangun sistem cerdas serta infrastruktur jaringan yang andal dan aman.</p>
+      <div class="btns">
+        <a class="btn p" href="#kontak">Hubungi Saya</a>
+        <a class="btn" href="https://github.com/ardhika13" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/ardhika-galuh-jati-kusuma" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats rv">
+    <div class="card stat"><b>20</b><span>Sertifikat Selesai</span></div>
+    <div class="card stat"><b>4</b><span>Proyek Unggulan</span></div>
+    <div class="card stat"><b>99.49</b><span>Skor Python SIC</span></div>
+    <div class="card stat"><b>4/4</b><span>Stage Samsung SIC</span></div>
+  </div>
 </section>
 
 <section id="pengalaman" class="rv">
-<h2>Pengalaman</h2><p class="sub">Magang dan kepemimpinan.</p>
-<div class="card">
-<div class="tl"><h3>IT Infrastructure &amp; Network Intern <small class="mono">2026</small></h3><small>PPSDM Migas Cepu</small><p>Konfigurasi VLAN, routing OSPF, NAT, serta pemeliharaan infrastruktur jaringan laboratorium dan jaringan lokal.</p></div>
-<div class="tl" style="margin-bottom:0"><h3>Ketua Tim KKN Desa Getas <small class="mono">2026</small></h3><small>Universitas Teknologi Ronggolawe</small><p>Mengoordinasikan program kerja pengabdian masyarakat, pelatihan kewirausahaan digital, dan pemasangan sarana fasilitas publik.</p></div>
-</div>
+  <h2>Pengalaman</h2>
+  <p class="sub">Magang industri dan kepemimpinan organisasi.</p>
+  <div class="card">
+    <div class="tl">
+      <h3>IT Infrastructure &amp; Network Intern <small class="mono">2026</small></h3>
+      <small>PPSDM Migas Cepu</small>
+      <p>Konfigurasi VLAN, routing OSPF, NAT, serta pemeliharaan infrastruktur jaringan laboratorium dan jaringan lokal.</p>
+    </div>
+    <div class="tl" style="margin-bottom:0">
+      <h3>Ketua Tim KKN Desa Getas <small class="mono">2026</small></h3>
+      <small>STT Ronggolawe Cepu</small>
+      <p>Mengoordinasikan program kerja pengabdian masyarakat, pelatihan kewirausahaan digital, dan pemasangan sarana fasilitas publik.</p>
+    </div>
+  </div>
 </section>
 
 <section id="proyek" class="rv">
-<h2>Proyek Unggulan</h2><p class="sub">Dari keamanan industri sampai IoT.</p>
-<div class="grid">
-<a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener"><h3>SCADA Modbus Intrusion Detection</h3><p>Analisis lalu lintas Modbus/TCP dan evaluasi algoritma ML (Random Forest, SVM, XGBoost) untuk mendeteksi serangan pada jaringan ICS.</p><span class="tag mono">Python</span><span class="tag mono">Scikit-Learn</span><span class="tag mono">XGBoost</span></a>
-<a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener"><h3>Smart Lock Face Recognition</h3><p>Pengunci pintu otomatis berbasis pengenalan wajah dengan OpenCV dan dasbor web Django.</p><span class="tag mono">OpenCV</span><span class="tag mono">Django</span></a>
-<a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener"><h3>Smart Home IoT Telemetry</h3><p>Pemantauan lingkungan rumah dengan ESP32, sensor DHT11/MQ-2, protokol MQTT, dan streaming video langsung.</p><span class="tag mono">ESP32</span><span class="tag mono">MQTT</span><span class="tag mono">Sensor</span></a>
-<a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener"><h3>Cloud Incident Reporting System</h3><p>Aplikasi pelaporan insiden berbasis cloud dengan PHP, MySQL, dan sistem peran pengguna.</p><span class="tag mono">PHP</span><span class="tag mono">MySQL</span></a>
-</div>
+  <h2>Proyek Unggulan</h2>
+  <p class="sub">Pengembangan sistem dari keamanan industri hingga IoT.</p>
+  <div class="grid">
+    <a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener">
+      <h3>SCADA Modbus Intrusion Detection</h3>
+      <p>Analisis lalu lintas Modbus/TCP dan evaluasi algoritma ML (Random Forest, SVM, XGBoost) untuk mendeteksi serangan pada jaringan ICS.</p>
+      <span class="tag mono">Python</span><span class="tag mono">Scikit-Learn</span><span class="tag mono">XGBoost</span>
+    </a>
+    <a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener">
+      <h3>Smart Lock Face Recognition</h3>
+      <p>Pengunci pintu otomatis berbasis pengenalan wajah dengan OpenCV dan dasbor web Django.</p>
+      <span class="tag mono">OpenCV</span><span class="tag mono">Django</span>
+    </a>
+    <a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener">
+      <h3>Smart Home IoT Telemetry</h3>
+      <p>Pemantauan lingkungan rumah dengan ESP32, sensor DHT11/MQ-2, protokol MQTT, dan streaming video langsung.</p>
+      <span class="tag mono">ESP32</span><span class="tag mono">MQTT</span><span class="tag mono">Sensor</span>
+    </a>
+    <a class="card pj" href="https://github.com/ardhika13" target="_blank" rel="noopener">
+      <h3>Cloud Incident Reporting System</h3>
+      <p>Aplikasi pelaporan insiden berbasis cloud dengan PHP, MySQL, dan sistem peran pengguna.</p>
+      <span class="tag mono">PHP</span><span class="tag mono">MySQL</span>
+    </a>
+  </div>
 </section>
 
 <section class="rv">
-<h2>Penghargaan &amp; Program</h2><p class="sub">Program pengembangan teknologi nasional.</p>
-<div class="card sic">
-<h3>Samsung Innovation Campus Batch 7 <span class="tag mono" style="margin-left:6px">Stage 1 sampai 4 selesai</span></h3>
-<small class="mono" style="color:var(--mu)">Samsung Electronics Indonesia &amp; ibimbing &middot; 2025 - 2026</small>
-<p style="font-size:14px;color:var(--mu);margin-top:10px">Menyelesaikan seluruh tingkatan program hingga babak prototipe final.</p>
-<div class="stg">
-<div><b>Stage 1:</b> Python Programming (skor 99.49)</div>
-<div><b>Stage 2:</b> IoT dan perangkat keras ESP32/MQTT</div>
-<div><b>Stage 3:</b> Pemodelan AI/ML dan integrasi sensor</div>
-<div><b>Stage 4:</b> Prototipe final Smart Home IoT</div>
-</div></div>
+  <h2>Penghargaan &amp; Program</h2>
+  <p class="sub">Program pengembangan teknologi nasional.</p>
+  <div class="card sic">
+    <h3>Samsung Innovation Campus Batch 7 <span class="tag mono" style="margin-left:6px;border-color:rgba(245,158,11,.4);color:#f59e0b">Stage 1 sampai 4 Selesai</span></h3>
+    <small class="mono" style="color:var(--mu)">Samsung Electronics Indonesia &amp; ibimbing &middot; 2025 - 2026</small>
+    <p style="font-size:14px;color:var(--mu);margin-top:10px">Menyelesaikan seluruh tingkatan program nasional hingga babak prototipe final.</p>
+    <div class="stg">
+      <div><b>Stage 1:</b> Python Programming (Skor: 99.49)</div>
+      <div><b>Stage 2:</b> IoT &amp; Perangkat Keras ESP32/MQTT</div>
+      <div><b>Stage 3:</b> Pemodelan AI/ML &amp; Integrasi Sensor</div>
+      <div><b>Stage 4:</b> Prototipe Final Smart Home IoT</div>
+    </div>
+  </div>
 </section>
 
 <section id="sertifikat" class="rv">
-<h2>Sertifikat</h2><p class="sub">20 sertifikat dari Cisco, IBM, Windsurf, dan lembaga lain.</p>
-<div class="tabs" id="tabs"></div>
-<div class="cg" id="cg"></div>
+  <h2>Sertifikat</h2>
+  <p class="sub">20 sertifikat profesional dari Cisco, IBM, Windsurf, dan lembaga terakreditasi.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="cg" id="cg"></div>
 </section>
 
 <section id="keahlian" class="rv">
-<h2>Keahlian</h2><p class="sub">Teknologi yang saya gunakan.</p>
-<div class="card">
-<div class="sk"><b>Bahasa</b><span>Python, PHP, C++</span></div>
-<div class="sk"><b>Kerangka kerja</b><span>Django, Flask, Streamlit, OpenCV, Scikit-Learn</span></div>
-<div class="sk"><b>Jaringan &amp; keamanan</b><span>Cisco Packet Tracer, GNS3, MikroTik RouterOS, analisis Modbus/TCP, VLAN, OSPF, NAT</span></div>
-<div class="sk"><b>IoT &amp; perangkat keras</b><span>ESP32, ESP8266, sensor, MQTT</span></div>
-<div class="sk"><b>Basis data &amp; alat</b><span>MySQL, PostgreSQL, Git, GitHub, n8n</span></div>
-</div>
+  <h2>Keahlian</h2>
+  <p class="sub">Teknologi dan perangkat lunak yang dikuasai.</p>
+  <div class="card">
+    <div class="sk"><b>Bahasa</b><span>Python, PHP, C++</span></div>
+    <div class="sk"><b>Kerangka Kerja</b><span>Django, Flask, Streamlit, OpenCV, Scikit-Learn</span></div>
+    <div class="sk"><b>Jaringan &amp; Keamanan</b><span>Cisco Packet Tracer, GNS3, MikroTik RouterOS, Analisis Modbus/TCP, VLAN, OSPF, NAT</span></div>
+    <div class="sk"><b>IoT &amp; Perangkat Keras</b><span>ESP32, ESP8266, Sensor, MQTT</span></div>
+    <div class="sk"><b>Basis Data &amp; Tools</b><span>MySQL, PostgreSQL, Git, GitHub, n8n</span></div>
+  </div>
 </section>
 
 <section id="kontak" class="rv">
-<div class="card ct"><h2>Mari berkolaborasi</h2><p class="sub" style="margin-bottom:20px">Terbuka untuk magang, diskusi, dan proyek di bidang keamanan siber industri, machine learning, dan IoT.</p>
-<div class="btns" style="justify-content:center"><a class="btn p" href="mailto:ardhikakusuma13@gmail.com">ardhikakusuma13@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/ardhika-galuh-jati-kusuma" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/ardhika13" target="_blank" rel="noopener">GitHub</a></div></div>
+  <div class="card ct">
+    <h2>Mari Berkolaborasi</h2>
+    <p class="sub" style="margin-bottom:20px">Terbuka untuk magang, diskusi riset, dan proyek di bidang keamanan siber industri, machine learning, dan IoT.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn p" href="mailto:ardhikakusuma13@gmail.com">ardhikakusuma13@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/ardhika-galuh-jati-kusuma" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/ardhika13" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
 </section>
 </main>
-<footer>&copy; 2026 Ardhika Galuh Jati Kusuma &middot; Universitas Teknologi Ronggolawe</footer>
+
+<footer>&copy; 2026 Ardhika Galuh Jati Kusuma &middot; STT Ronggolawe Cepu</footer>
 
 <script>
 document.documentElement.classList.add('js');
-var L={cisco:"Cisco Networking Academy",ibm:"IBM SkillsBuild",windsurf:"Windsurf",other:"Lainnya"};
-var C=[
-["cisco","Network Technician Career Path","Cisco Networking Academy","Okt 2026"],
-["cisco","Network Support and Security","Cisco Networking Academy","Okt 2026"],
-["cisco","Network Addressing and Basic Troubleshooting","Cisco Networking Academy","Okt 2026"],
-["cisco","Networking Basics (22 jam)","Cisco Networking Academy","Sep 2026"],
-["cisco","Getting Started with Cisco Packet Tracer","Cisco Networking Academy","Agt 2026"],
-["ibm","Artificial Intelligence Fundamentals","IBM SkillsBuild","Sep 2026"],
-["ibm","Cybersecurity Professional (8 jam)","IBM SkillsBuild","Agt 2025"],
-["ibm","Cybersecurity: On the Defense (MDL-407)","IBM SkillsBuild","Agt 2025"],
-["ibm","Cybersecurity Fundamentals","IBM SkillsBuild","Agt 2025"],
-["ibm","Web Development Fundamentals","IBM SkillsBuild","Agt 2025"],
-["ibm","Code Generation and Optimization Using IBM Granite","IBM SkillsBuild","Agt 2025"],
-["ibm","IBM Granite Models for Software Development (MDL-567)","IBM SkillsBuild","Agt 2025"],
-["ibm","Use Generative AI for Software Development (MDL-504)","IBM SkillsBuild","Agt 2025"],
-["windsurf","Ace a Data Scientist Interview in 2025","Windsurf","Agt 2025"],
-["windsurf","Exploratory Data Analysis with Python &amp; GenAI","Windsurf","Agt 2025"],
-["windsurf","n8n: A Complete Guide to the Automation Tool","Windsurf","Agt 2025"],
-["windsurf","Building a Customized Newsletter AI Agent","Windsurf","Agt 2025"],
-["windsurf","Guide to Vibe Coding in Windsurf","Windsurf","Agt 2025"],
-["other","Pelatihan Keselamatan dan Kesehatan Kerja (K3)","Mita Training","Agt 2025"],
-["other","Sertifikasi Microsoft Office: Word, Excel, PowerPoint (skor 95.55)","LKP Borju Komputer","Sep 2024"]
+
+var L = {cisco:"Cisco Networking Academy", ibm:"IBM SkillsBuild", windsurf:"Windsurf", other:"Lainnya"};
+var C = [
+  ["cisco","Network Technician Career Path","Cisco Networking Academy","Okt 2026"],
+  ["cisco","Network Support and Security","Cisco Networking Academy","Okt 2026"],
+  ["cisco","Network Addressing and Basic Troubleshooting","Cisco Networking Academy","Okt 2026"],
+  ["cisco","Networking Basics (22 jam)","Cisco Networking Academy","Sep 2026"],
+  ["cisco","Getting Started with Cisco Packet Tracer","Cisco Networking Academy","Agt 2026"],
+  ["ibm","Artificial Intelligence Fundamentals","IBM SkillsBuild","Sep 2026"],
+  ["ibm","Cybersecurity Professional (8 jam)","IBM SkillsBuild","Agt 2025"],
+  ["ibm","Cybersecurity: On the Defense (MDL-407)","IBM SkillsBuild","Agt 2025"],
+  ["ibm","Cybersecurity Fundamentals","IBM SkillsBuild","Agt 2025"],
+  ["ibm","Web Development Fundamentals","IBM SkillsBuild","Agt 2025"],
+  ["ibm","Code Generation and Optimization Using IBM Granite","IBM SkillsBuild","Agt 2025"],
+  ["ibm","IBM Granite Models for Software Development (MDL-567)","IBM SkillsBuild","Agt 2025"],
+  ["ibm","Use Generative AI for Software Development (MDL-504)","IBM SkillsBuild","Agt 2025"],
+  ["windsurf","Ace a Data Scientist Interview in 2025","Windsurf","Agt 2025"],
+  ["windsurf","Exploratory Data Analysis with Python &amp; GenAI","Windsurf","Agt 2025"],
+  ["windsurf","n8n: A Complete Guide to the Automation Tool","Windsurf","Agt 2025"],
+  ["windsurf","Building a Customized Newsletter AI Agent","Windsurf","Agt 2025"],
+  ["windsurf","Guide to Vibe Coding in Windsurf","Windsurf","Agt 2025"],
+  ["other","Pelatihan Keselamatan dan Kesehatan Kerja (K3)","Mita Training","Agt 2025"],
+  ["other","Sertifikasi Microsoft Office: Word, Excel, PowerPoint (Skor: 95.55)","LKP Borju Komputer","Sep 2024"]
 ];
-var cur="all",tabs=document.getElementById("tabs"),cg=document.getElementById("cg");
+
+var cur = "all", tabs = document.getElementById("tabs"), cg = document.getElementById("cg");
+
 function draw(){
- var k=["all","cisco","ibm","windsurf","other"];
- tabs.innerHTML=k.map(function(x){var n=x=="all"?C.length:C.filter(function(c){return c[0]==x}).length;return '<button class="'+(x==cur?"on":"")+'" data-k="'+x+'">'+(x=="all"?"Semua":L[x])+" ("+n+")</button>"}).join("");
- cg.innerHTML=C.filter(function(c){return cur=="all"||c[0]==cur}).map(function(c){return '<div class="card cert"><h3>'+c[1]+'</h3><span class="is mono">'+c[2]+'</span><span class="dt mono">'+c[3]+'</span></div>'}).join("");
+  var k = ["all","cisco","ibm","windsurf","other"];
+  tabs.innerHTML = k.map(function(x){
+    var n = x=="all" ? C.length : C.filter(function(c){return c[0]==x}).length;
+    return '<button class="'+(x==cur?"on":"")+'" data-k="'+x+'">'+(x=="all"?"Semua":L[x])+" ("+n+")</button>";
+  }).join("");
+  
+  cg.innerHTML = C.filter(function(c){return cur=="all"||c[0]==cur}).map(function(c){
+    return '<div class="card cert"><h3>'+c[1]+'</h3><span class="is mono">'+c[2]+'</span><span class="dt mono">'+c[3]+'</span></div>';
+  }).join("");
 }
-tabs.addEventListener("click",function(e){if(e.target.dataset.k){cur=e.target.dataset.k;draw()}});
+
+tabs.addEventListener("click", function(e){
+  if(e.target.dataset.k){
+    cur = e.target.dataset.k;
+    draw();
+  }
+});
 draw();
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.08});
+
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.classList.add("in");
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.08});
+
 document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
-var r=document.documentElement;
-document.getElementById("th").onclick=function(){
- var d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;
- r.dataset.theme=d?"light":"dark";
+
+// Toggle Dark/Light Mode
+var r = document.documentElement;
+var btnTh = document.getElementById("th");
+
+function updateThemeBtn(){
+  var isDark = r.dataset.theme === "dark";
+  btnTh.textContent = isDark ? "🌙 Mode Dark" : "☀️ Mode Light";
+}
+updateThemeBtn();
+
+btnTh.onclick = function(){
+  var currentTheme = r.dataset.theme || "dark";
+  var newTheme = currentTheme === "dark" ? "light" : "dark";
+  r.dataset.theme = newTheme;
+  updateThemeBtn();
 };
 </script>
 </body>
